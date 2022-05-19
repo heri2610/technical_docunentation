@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oleo+Script+Swash+Caps&family=Smooch&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: montserrat;
+
+  font-size: 1em;
+}
+body {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+code pre {
+  background-color: #eee;
+}
+header {
+  font-weight: 700;
+  font-size: 1.3em;
+}
+nav {
+  border-right: 2px solid black;
+  padding-top: 20px;
+
+  font-size: 0.9em;
+  width: 700px;
+}
+nav header {
+  padding: 20px 10px;
+}
+nav a {
+  display: block;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  padding: 20px 10px 5px 10px;
+  color: black;
+}
+
+main {
+  padding-left: 5px;
+  padding: 20px 10px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+@media (max-width: 576px) {
+  body {
+    flex-direction: column;
+  }
+  nav {
+    overflow-y: scroll;
+    height: 250px;
+    border-bottom: 2px solid black;
+  }
+  main {
+    overflow-y: unset;
+  }
+}
